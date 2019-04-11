@@ -1,0 +1,54 @@
+{
+  "plugins": [
+      "prettier"
+  ],
+  "rules": {
+      "indent": [
+          2,
+          2,
+          {
+              "SwitchCase": 1
+          }
+      ],
+      "space-before-function-paren": [
+          2,
+          {
+              "anonymous": "always",
+              "named": "never"
+          }
+      ],
+      "no-use-before-define": [
+          2,
+          "nofunc"
+      ],
+      "no-new": 0,
+      "no-shadow": 0,
+      "spaced-comment": 0,
+      "quote-props": 0,
+      "comma-dangle": [
+          0
+      ],
+      "new-cap": 0,
+      "max-len": [
+          2,
+          15800000
+      ],
+      "no-else-return": 0,
+      "prefer-template": 0,
+      "no-param-reassign": 0,
+      "skipBlankLines": true,
+      "ignoreComments": false,
+      "no-restricted-globals": 0,
+      "no-unused-vars": 0,
+      "import/no-extraneous-dependencies": 0
+  },
+  "env": {
+      "node": true,
+      "mocha": true
+  },
+  "extends": [
+      "eslint:recommended",
+      "airbnb/base",
+      "prettier"
+  ]
+}
